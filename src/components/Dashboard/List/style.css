@@ -1,0 +1,159 @@
+.list-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 0.5rem;
+    margin: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.list-row:hover{
+    background-color: var(--darkgrey);
+    border-radius: 1rem;
+}
+
+.list-row td{
+    text-align: left;
+    width: 18%;
+    /* border: 2px solid var(--white); */
+}
+
+.list-row .td-total-volume{
+    text-align: right;
+}
+
+.list-row .td-market-cap{
+    text-align: right;
+}
+
+.list-row .td-current-price{
+    text-align: center;
+}
+
+.td-list-image{
+    width: 3rem !important;
+    margin-right: 2rem;
+}
+
+.td-mobile-view{
+    display: none;
+}
+.watchlist-list-green{
+    margin-left: 1.5rem;
+    top: 1.5rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid var(--green);
+    color: var(--green);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  /* .watchlist-list-green:hover{
+      background-color: var(--green);
+      color: var(--green);
+      transition: all 0.3s;
+  } */
+  
+  .watchlist-list-red{
+    margin-left: 1.5rem;
+    top: 1.5rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid var(--red);
+    color: var(--red);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .watchlist-list-red:hover{
+    background-color: var(--red);
+    color: var(--red);
+    transition: all 0.3s;
+  } */
+ 
+
+
+@media only screen and (max-width: 1000px) {
+   .list-row{
+    width: 95%;
+   }
+   .list-row .td-total-volume{
+     font-size: 1rem !important;
+   }
+
+   .list-row .td-coin-current-price{
+    font-size: 1rem;
+    font-weight: 1rem;
+   }
+
+   .list-row .coin-basic-details .coin-symbol{
+        font-size: 1rem !important;
+   }
+
+   .list-row .coin-basic-details .coin-name{
+    font-size: 0.75rem !important;
+   }
+
+   .list-row .td-list-image{
+    width: 2rem !important;
+   }
+   .td-mobile{
+    display: none;
+    }
+    .td-mobile-view{
+        display: block;
+        font-size: 1rem !important;
+    }
+    .td-desktop-view{
+        display: none;
+    }
+  }
+
+
+  @media only screen and (max-width: 850px) {
+    .list-row{
+        width: 100%;
+        gap : 0.25rem;
+        margin: 0rem;
+        padding: 0rem;
+        border-radius: 1rem;
+    }
+    
+    .td-list-image{
+        width: 1rem;
+    }
+
+    .list-row .td-coin-current-price{
+        font-size: 0.8rem;
+        font-weight: 1rem !important;
+       }
+   .list-row .td-mobile-view{
+    font-size: 0.8rem !important;
+   }
+   .list-row .chip-flex .price-chip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+    min-width: 20px !important;
+   }
+   .list-row .chip-flex{
+    margin: 0;
+   }
+   .list-row .coin-basic-details .coin-symbol{
+    font-size: 0.8rem !important;
+    }
+
+    .list-row .coin-basic-details .coin-name{
+    font-size: 0.6rem !important;
+    }
+
+  }  

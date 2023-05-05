@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+  --white: #fff;
+  --black: #111;
+  --blue: #3a80e9;
+  --grey: #888;
+  --darkgrey: #1b1b1b;
+  --green: #61c96f;
+  --red: #f94141;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[data-theme="dark"] {
+  --white: #ffffff;
+  --black: #111;
+  --grey: #888;
+  --darkgrey: #1b1b1b;
+}
+
+[data-theme="light"] {
+  --white: #111;
+  --black: #fff;
+  --grey: #888;
+  --darkgrey: #f3f3f3;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+::selection {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+  background: var(--white)
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
+.grey-wrapper{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--darkgrey);
+  border-radius: 1rem;
+}
+
+.grey-wrapper .coin-heading{
+  margin : 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.grey-wrapper .coin-desc{
+  margin: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.coin-flex-days{
+  display: flex;
+  justify-content: space-between;
+}
+
+.no-coin-msg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

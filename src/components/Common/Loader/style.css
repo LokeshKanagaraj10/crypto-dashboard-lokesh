@@ -1,0 +1,9 @@
+.loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--blue);
+    width: 100vw;
+    height: 100vh;
+}

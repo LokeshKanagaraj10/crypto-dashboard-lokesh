@@ -1,0 +1,24 @@
+.grid-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.table-list{
+    width: 80%;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 850px) {
+    .table-list{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: var(--black);
+    }
+  } 

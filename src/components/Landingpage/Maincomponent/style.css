@@ -1,0 +1,130 @@
+.main-flex{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    padding: 0.5rem 2.2rem;
+}
+
+.left-heading1, .left-heading2{
+    font-size: 6rem;  
+    margin: 0;
+}
+.left-heading1{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--white);
+}
+
+.left-heading1:hover{
+    color: var(--black);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--white);
+    transition: all 0.3s;
+}
+.left-heading2{
+    color: var(--blue);  
+}
+
+.left-para{
+    font-size: 1rem;
+    color: var(--grey);
+}
+
+.btn-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.right-flex{
+    width: 50%;
+    position: relative;
+}
+
+.iphone{
+    position: absolute;
+    z-index: 100;
+    min-width: 300px;
+    width: 40%;
+    top: 1.5rem;
+    right: 11rem;
+}
+
+.gradient{
+    position: absolute;
+    min-width: 250px;
+    width: 30%;
+    top: 6rem;
+    right: 9rem;
+}
+
+@media only screen and (max-width: 1200px) {    
+   .left-heading1 , .left-heading2{
+    font-size: 4rem;
+   }
+
+   .right-flex{
+    width: 50%;
+    position: relative;
+}
+
+.iphone{
+  
+    z-index: 100;
+    min-width: 200px;
+    width: 40%;
+    top: 1.5rem;
+    right: 9rem;
+}
+
+.gradient{
+   
+    min-width: 180px;
+    width: 30%;
+    top: 4rem;
+    right: 7rem;
+}
+
+}
+
+@media only screen and (max-width: 800px) {    
+    .main-flex{
+        width: 80%;
+        flex-direction: column;
+    }
+    .left-flex{
+        width: 100%;
+    }
+    .left-heading1 , .left-heading2{
+     font-size: 3rem;
+     text-align: center;
+    }
+
+    .left-para{
+        text-align: center;
+    }
+    .btn-flex{
+        justify-content: center;
+    }
+ 
+    .right-flex{
+     margin-top: 80px;
+     width: 100%;
+     position: relative;
+    }
+ 
+ .iphone{
+     width: 40%;
+     top: 1.5rem;
+     right: 30%;  
+ }
+ 
+ .gradient{
+     width: 30%;
+     top: 4rem;
+     right: 20%;
+     
+ }
+ 
+ }
