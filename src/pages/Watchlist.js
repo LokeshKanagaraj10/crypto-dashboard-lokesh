@@ -26,7 +26,7 @@ function Watchlist() {
         <Header/>
         {
             coins.length > 0 ? <Tabscomponent coins={coins}/> : <h1 className='no-coin-msg'>NO COINS IN WATCHLIST</h1>
-            
+ 
 
         }
     </div>

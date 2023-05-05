@@ -70,11 +70,17 @@ body{
 
 .coin-flex-days{
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 .no-coin-msg{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .coin-flex-days{
+      flex-direction: column !important;
+  }
 }
